@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PdfViewerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
